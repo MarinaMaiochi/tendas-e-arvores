@@ -147,3 +147,6 @@ p{
 .escondido{
     visibility: hidden;
 }
+.instucoes{
+    max-width: 80% ;
+}

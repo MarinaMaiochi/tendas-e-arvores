@@ -6,12 +6,12 @@
         <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
         <meta http-equiv="Pragma" content="no-cache" />
         <meta http-equiv="Expires" content="0" />
-        <title>Arvores e Tendas</title>
+        <title>Árvores e Tendas</title>
         <link rel="stylesheet" href="tendas.css">
     </head>
 
     <body>
-        <h1> "Tendas e Arvores"</h1>
+        <h1> "Tendas e Árvores"</h1>
         <div  class="escolheTamanho">
             <p> Escolha o tamanho do Tabuleiro: </p>
             <input min="2" max="25" value="4" class="tamanhoTabuleiro" type="number">
@@ -22,7 +22,7 @@
         </div>
 
         <div id="ganhou" class="parabens escondido">
-            <p> Parabens! Voce ganhou. </p>
+            <p> Parabéns! Você ganhou. </p>
         </div>
 
         <div class="controles">
@@ -34,6 +34,16 @@
             <button class="f5Tabuleiro">Novo Tabuleiro</button>
             <button class="reset">Reset Tabuleiro</button>
             <button class="resultado">Ver Resultado</button>
+        </div>
+        <div class="instucoes">
+            <h1>
+                Instruções:
+            </h1>
+            <ul>
+                 <li> Cada árvore tem uma tenda. (Não vale nas diagonais, apenas laterais).</li>
+                 <li> As tendas não podem ficar uma do lado da outra nem na diagonal.</li>
+                <li> Os números indicam a quantidade de tendas na linha/coluna.</li>
+            </ul>
         </div>
         <script src="tendas.js"></script>
     </body>
