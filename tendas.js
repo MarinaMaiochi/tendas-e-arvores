@@ -225,7 +225,7 @@ function confereContadorColuna(coluna){
     for (let i = 0 ; i < matrizResultado.length ; i++){
         if (matrizResultado[i][coluna] == TENDA){
             tendaOriginal++ ;
-        } else if (matrizResultado[i][coluna] == '_'){
+        } else if (matrizResultado[i][coluna] == '_' || matrizResultado[i][coluna] == ' '){
             gramaOriginal++ ;
         }
     }
@@ -272,7 +272,7 @@ function confereContadorLinha(linha){
     for (let j = 0 ; j < matrizResultado.length ; j++){
         if (matrizResultado[linha][j] == TENDA){
             tendaOriginal++ ;
-        } else if (matrizResultado[linha][j] == '_'){
+        } else if (matrizResultado[linha][j] == '_' || matrizResultado[linha][j] == ' '){
             gramaOriginal++ ;
         }
     }
