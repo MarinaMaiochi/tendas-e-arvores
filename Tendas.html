@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Arvores e Tendas</title>
+        <link rel="stylesheet" href="tendas.css">
+    </head>
+
+    <body>
+        <h1> "Tendas e Arvores"</h1>
+        <div  class="escolheTamanho">
+            <p> Escolha o tamanho do Tabuleiro: </p>
+            <input min="2" max="25" value="4" class="tamanhoTabuleiro" type="number">
+        </div>
+
+        <div id="tabuleiro" class="tabuleiro">
+
+        </div>
+
+        <div id="ganhou" class="parabens escondido">
+            <p> Parabens! Voce ganhou. </p>
+        </div>
+
+        <div class="controles">
+            <button class="play">Play</button>
+            <button disabled="true" class="pause">Pause</button>
+            <div class="timer"> <p> 00:00</p> </div>
+        </div>
+        <div class="controles">
+            <button class="f5Tabuleiro">Novo Tabuleiro</button>
+            <button class="reset">Reset Tabuleiro</button>
+            <button class="resultado">Ver Resultado</button>
+        </div>
+        <script src="tendas.js"></script>
+    </body>
+</html>

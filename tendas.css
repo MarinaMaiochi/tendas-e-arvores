@@ -1,0 +1,149 @@
+
+body{
+    background-color: wheat;
+    display:flex;
+    flex-direction: column;
+    font-family: monospace;
+    align-items: center;
+    border: 0;
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: large;
+    color: rgb(70, 38, 23);
+}
+.escolheTamanho{
+    display:flex;
+    align-content: center;
+}
+p{
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.tamanhoTabuleiro{
+    width: 34px;
+    height: 20px;
+    font-size: 18px;
+    border: 1px solid black;
+    padding-left: 4px;
+}
+.tabuleiro{
+    padding: 20px;
+    white-space: nowrap;
+    overflow-x: auto;
+    max-width: 90%;
+}
+.celula {
+    display: inline-block;
+    width: 40px ;
+    height: 40px ;
+    font-size: 24px;
+    vertical-align: bottom;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid wheat;
+}
+.numero{
+    background-color: wheat;
+}
+.tenda{
+    background-color: rgb(119, 195, 201);
+    background-image: url(tendaimg.png) , url(gramadoimg.png);
+    background-size: 40px 40px ;
+}
+.arvore{
+    background-color: rgb(119, 195, 201);
+    background-image: url(arvoreimg.png) , url(gramadoimg.png) ;
+    background-size: 40px 40px ;
+}
+.vazio{
+    background-color: rgb(53, 143, 90);
+}
+.grama{
+    background-color: rgb(119, 195, 201);
+    background-image: url(gramadoimg.png);
+    background-size: 40px 40px ;
+}
+.clicavel {
+    cursor: pointer;
+}
+.f5Tabuleiro{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(23, 170, 35);
+    align-content: center;
+    border: none;
+}
+.reset{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(238, 234, 18);
+    align-content: center;
+    border: none;
+}
+.resultado{
+    width: 80px;
+    height: 40px;
+    background-color: rgb(218, 40, 69);
+    color: white;
+    align-content: center;
+    border: none;
+}
+.play,.pause{
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    align-content: center;
+    border: none;
+}
+.timer{
+    display: flex;
+    vertical-align: top;
+    width: 80px;
+    height: 40px;
+    background-color: white;
+    align-content: center;
+    border: none;
+    text-align: center;
+    justify-content: center;
+}
+.controles{
+    display: flex;
+}
+.controles > *{
+    margin: 8px;
+    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+}
+.erroX:after{
+    position: relative;
+    background-size: 70% 70%;
+    content: ' ';
+    height: 100%;
+    background-image: url(close.png);
+    float: left;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation-name: piscafundo;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes piscafundo{
+    0% { opacity: 0;}
+    50% { opacity: 0.8;}
+    100% {opacity: 0;}
+}
+.numeroVermelho {
+    color: tomato;
+}
+.numeroClaro{
+    opacity: 50%;
+}
+.parabens{
+    color: rgb(192, 63, 63);
+    padding-bottom: 20px;
+}
+.escondido{
+    visibility: hidden;
+}
