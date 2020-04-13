@@ -399,6 +399,8 @@ document.querySelector('.f5Tabuleiro').addEventListener('click', atualizaPag);
 function fimDeJogo (){
     pauseTimer();
     const celulasMatriz = document.getElementsByClassName("clicavel");
+    let temErro = 0;
+    let temTenda = 0;
 
     for (let i = 0; i < celulasMatriz.length; i++) {            
         const celMatriz = celulasMatriz[i]    
@@ -407,13 +409,29 @@ function fimDeJogo (){
 
         if (celMatriz.classList.contains('tenda') && matrizResultado[linha][coluna] != TENDA) {
             celMatriz.classList.add('erroX');
+            temErro++ ;
+        }
+        if (celMatriz.classList.contains('tenda')) {
+            temTenda++ ;
         }
     }
-    const completaGrama = document.querySelectorAll(".vazio");
-    for (let i = 0; i < completaGrama.length; i++) {    
-        completaGrama[i].classList.add('grama');
-        completaGrama[i].classList.remove('vazio');
+
+    let tendaOriginal = 0; 
+    for (let i = 0 ; i < matrizResultado.length ; i++){
+      for (let j = 0 ; j < matrizResultado.length ; j++){
+            if (matrizResultado[i][j] == TENDA){
+                tendaOriginal++ ;
+            }
+        }   
     }
+
+    const completaGrama = document.querySelectorAll(".vazio");
+    if (temErro == 0 && temTenda == tendaOriginal){
+        for (let i = 0; i < completaGrama.length; i++) {    
+            completaGrama[i].classList.add('grama');
+            completaGrama[i].classList.remove('vazio');
+        }
+    }     
 
     const numeros = document.querySelectorAll(".numero:not(.numeroClaro)");
     const erro = document.querySelectorAll(".erroX");
