@@ -13,6 +13,7 @@ h1{
     color: rgb(70, 38, 23);
 }
 .escolheTamanho{
+    padding: 0 30px;
     display:flex;
     align-content: center;
 }
