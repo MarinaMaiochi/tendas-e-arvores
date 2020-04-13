@@ -444,7 +444,7 @@ document.querySelector('.resultado').addEventListener('click', fimDeJogo);
 function enterNoTamanho(event){
     if (event.key == 'Enter'){
         atualizaPag();
+        document.querySelector('.tamanhoTabuleiro').blur();
     }
-
 }
 document.querySelector('.tamanhoTabuleiro').addEventListener('keydown',enterNoTamanho)
