@@ -1,16 +1,16 @@
 
 body{
-    background-color: wheat;
+    background-color: black;
     display:flex;
     flex-direction: column;
     font-family: monospace;
     align-items: center;
     border: 0;
+    font-family: 'Baloo Paaji 2', cursive;
 }
 h1{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: large;
-    color: rgb(70, 38, 23);
+    color: #fcb000
 }
 .escolheTamanho{
     padding: 0 30px;
@@ -21,16 +21,17 @@ p{
     font-size: 18px;
     margin: 0;
     padding: 0;
+    color: white;
 }
 .tamanhoTabuleiro{
     width: 34px;
     height: 20px;
     font-size: 18px;
-    border: 1px solid black;
+    border: 1px solid white;
     padding-left: 4px;
 }
 .tabuleiro{
-    padding: 20px;
+    padding: 10px;
     white-space: nowrap;
     overflow-x: auto;
     max-width: 90%;
@@ -43,10 +44,11 @@ p{
     vertical-align: bottom;
     text-align: center;
     box-sizing: border-box;
-    border: 1px solid wheat;
+    border: 1px solid black;
 }
 .numero{
-    background-color: wheat;
+    background-color: black;
+    color: white;
 }
 .tenda{
     background-color: rgb(119, 195, 201);
@@ -59,7 +61,7 @@ p{
     background-size: 40px 40px ;
 }
 .vazio{
-    background-color: rgb(53, 143, 90);
+    background-color: rgb(119, 195, 201);
 }
 .grama{
     background-color: rgb(119, 195, 201);
@@ -72,21 +74,23 @@ p{
 .f5Tabuleiro{
     width: 80px;
     height: 40px;
-    background-color: rgb(23, 170, 35);
+    background-color:  rgb(119, 195, 201);
+    color: white;
     align-content: center;
     border: none;
 }
 .reset{
     width: 80px;
     height: 40px;
-    background-color: rgb(238, 234, 18);
+    background-color: rgb(93, 156, 109);
+    color: white;
     align-content: center;
     border: none;
 }
 .resultado{
     width: 80px;
     height: 40px;
-    background-color: rgb(218, 40, 69);
+    background-color: rgb(167, 189, 90);
     color: white;
     align-content: center;
     border: none;
@@ -103,18 +107,23 @@ p{
     vertical-align: top;
     width: 80px;
     height: 40px;
-    background-color: white;
     align-content: center;
     border: none;
     text-align: center;
     justify-content: center;
+    background-color: white;
+   
+}
+.timer>p{
+    color: black;
+    padding: 4px;
 }
 .controles{
     display: flex;
 }
 .controles > *{
     margin: 8px;
-    box-shadow: 2px 2px 4px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 0px 0px rgb(182, 182, 182);
 }
 .erroX:after{
     position: relative;
@@ -139,15 +148,16 @@ p{
     color: tomato;
 }
 .numeroClaro{
-    color: #9e9077;
+    color: #5a5a5a;
 }
 .parabens{
-    color: rgb(192, 63, 63);
-    padding-bottom: 20px;
+    color: #ffae00;
+    padding-bottom: 10px;
 }
 .escondido{
     visibility: hidden;
 }
 .instucoes{
     max-width: 80% ;
+    color: white;
 }
